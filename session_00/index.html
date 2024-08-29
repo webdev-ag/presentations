@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="../_session/dist/reset.css">
+        <link rel="stylesheet" href="../_session/dist/reveal.css">
+        <link rel="stylesheet" href="../_session/dist/theme/black.css">
+
+        <style>
+            .slides:after {
+                content: "AG Webentwicklung der Schillerschule / Jahrgang 2024-25";
+                font-size: 1.5rem;
+                color: #44D;
+                bottom: 1rem;
+                position: absolute;
+                width: max-content;
+                left: 25%;
+            }
+
+            .reveal h2 {
+                font-size: 1.25em;
+                color: red;
+            }
+
+            .reveal .slides .green {
+                color: rgb(64 242 64);
+            }
+            .reveal .slides .yellow {
+                color: rgb(242 242 64);
+            }
+            .reveal .slides .blue {
+                color: rgb(92 92 252);
+            }
+        </style>
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../_session/plugin/highlight/monokai.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1>AG Webentwicklung</h1>
+                </section>
+
+                <section>
+                    <h2>Ein Beispiel</h2>
+
+                    <p>
+                        <a target="_blank" href="https://webdev-ag.github.io/form-fun/">
+                            webdev-ag.github.io/form-fun
+                        </a>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Was können wir in so einer AG tun?</h2>
+
+                    <ul>
+                        <li class="fragment">Wollt ihr Dinge ins Internet bringen?</li>
+                        <li class="fragment">Echte Webseiten selbst bauen?</li>
+                        <li class="fragment">Einen Blog? Eine Fanseite? Ein Spiel selbst bauen?</li>
+                        <li class="fragment">...</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Wie kann so etwas ablaufen?</h2>
+
+                    Eine Webseite besteht aus
+                    <ul>
+                        <li>
+                            einer coolen Idee
+                            <span class="fragment green">die müsst ihr haben</span>
+                        </li>
+                        <li>
+                            HTML
+                            <span class="fragment yellow">das stellt den Text, die Bilder etc. dar</span>
+                        </li>
+                        <li>
+                            CSS
+                            <span class="fragment blue">wie Text/Bilder/... aussehen sollen</span>
+                        </li>
+                        <li>
+                            vielleicht Javascript
+                            <span class="fragment green">das bestimt das Verhalten</span>
+                        </li>
+                    </ul>
+
+                    <p>Dazu kommt dann vielleicht noch</p>
+                    <ul>
+                        <li class="fragment green">Wie funktionieren Internet Adressen?</li>
+                        <li class="fragment blue">Was bedeutet das http vor den Internet-Adressen?</li>
+                        <li class="fragment yellow">...</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <script src="../_session/dist/reveal.js"></script>
+        <script src="../_session/plugin/notes/notes.js"></script>
+        <script src="../_session/plugin/markdown/markdown.js"></script>
+        <script src="../_session/plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
+        </script>
+    </body>
+</html>
