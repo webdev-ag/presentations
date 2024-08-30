@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <base href="//webdev-ag.github.io/presentations/">
+        <base href="../">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -99,6 +99,59 @@
                         <li class="fragment yellow">...</li>
                     </ul>
                 </section>
+
+                <section>
+                    <h2>Vorbereitung</h2>
+
+                    <ul>
+                        <li>Legt einen Ordner mit dem Namen <code class="green">ag webentwicklung</code> an</li>
+                        <li class="fragment">legt darin einen Order <code class="green">erste schritte</code> an</li>
+                        <li class="fragment">Öffnet das Programm <code class="green">Visual Studio Code</code></li>
+                        <li class="fragment">Drückt <code class="green">[Strg] + [k][o]</code></li>
+                        <li class="fragment">Wählt Euren Ordner <code class="green">erste schritte</code> aus</li>
+                        <li class="fragment">Öffnet dann eine neue Datei <code class="green">[Strg] + [n]</code></li>
+                        <li class="fragment">Speichert die Datei mit dem Namen <code class="green">index.html</code></li>
+                    </ul>
+                </section>
+
+                <section data-markdown>
+                    ## HTML
+
+                    - bitte fügt diesen Code in die Datei ein
+                      ```html
+                      &lt;html&gt;
+                        &lt;head&gt;&lt;/head&gt;
+                        &lt;body&gt;
+                            das ist ein test
+                        &lt;/body&gt;
+                      &lt;/html&gt;
+                      ```
+                      und speichert die Datei `[Strg]+[s]`
+                </section>
+                <section data-markdown>
+                    - danach öffnet Euren Browser und öffnet eure Datei mit `[Strg]+[o]`
+                    - danach ändert den Code zwischen den body tags
+                      ```html
+                        ...
+                        &lt;body&gt;
+                            &lt;h1&gt;Überschrift&lt;/h1&gt;
+                            &lt;p&gt;
+                                Irgendein Text
+                                &lt;img src="https://tinyurl.com/2bvknnow" /&gt;
+                            &lt;/p&gt;
+                        &lt;/body&gt;
+                        ...
+                      ```
+                    - speichern und im Browser neu laden
+                </section>
+                <section data-markdown>
+                    - dann fügt in eine neue Zeile unter dem `img` ein und schreibt dort
+                      ```html
+                        &lt;a href="http://schillerschule-offenbach.de/" &gt;
+                            Schillerschule
+                        &lt;/a&gt;
+                      ```
+                </section>
             </div>
         </div>
 
@@ -112,6 +165,10 @@
             // - https://revealjs.com/config/
             Reveal.initialize({
                 hash: true,
+                controls: true,
+                progress: false,
+                slideNumber: true,
+                loop: true,
 
                 // Learn about plugins: https://revealjs.com/plugins/
                 plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
