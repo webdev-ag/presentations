@@ -114,47 +114,79 @@
                         <li>Legt einen Ordner mit dem Namen <code class="green">ag webentwicklung</code> an</li>
                         <li class="fragment">legt darin einen Order <code class="yellow">erste schritte</code> an</li>
                         <li class="fragment">Öffnet das Programm <code class="green">Notepad</code></li>
-                        <li class="fragment">Speichert die Datei mit dem Namen <code class="green">index.html</code>in dem Ordner <code class="yellow">erste schritte</code></li>
+                        <li class="fragment">Speichert eine Datei mit dem Namen <code class="green">index.html</code>in dem Ordner <code class="yellow">erste schritte</code></li>
                     </ul>
                 </section>
 
                 <section data-markdown>
+                    <script type="template/markdown">
                     ## HTML
 
-                    - bitte fügt diesen Code in die Datei ein
+                    - bitte fügt diesen Code in die Datei `index.html` ein
                       ```html
-                      &lt;html&gt;
-                        &lt;head&gt;&lt;/head&gt;
-                        &lt;body&gt;
+                      <html>
+                        <head></head>
+                        <body>
                             das ist ein test
-                        &lt;/body&gt;
-                      &lt;/html&gt;
+                        </body>
+                      </html>
                       ```
                       und speichert die Datei `[Strg]+[s]`
+                    </script>
                 </section>
+
                 <section data-markdown>
+                    <script type="template/markdown">
+                    ## HTML
+
+                    - html besteht aus **tag**s `<...>`
+                    - ein **tag** hat (meist) ein Ende-Tag  `</...>`
+                    - ein **tag** bestimmt, wie etwas strukturiert ist und hat ein paar Standard-Darstellungen
+                      (Überschriften sind groß und Fett, Links sind blau und unterstrichen, ...)
+                    - ein **tag** bestimmt, was darin stehen kann/darf und was damit passiert
+                    - alles im tag `head` wird nicht im Browser angezeigt
+                    - alles im tag `body` wird im Brwoser dargestellt
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="template/markdown">
+                    ### mehr TAGs
                     - danach öffnet Euren Browser und öffnet eure Datei `index.html` mit `[Strg]+[o]`
                     - danach ändert den Code zwischen den body tags
                       ```html
                         ...
-                        &lt;body&gt;
-                            &lt;h1&gt;Überschrift&lt;/h1&gt;
-                            &lt;p&gt;
+                        <body>
+                            <h1>Überschrift</h1>
+                            <p>
                                 Irgendein Text
-                                &lt;img src="https://tinyurl.com/2bvknnow" /&gt;
-                            &lt;/p&gt;
-                        &lt;/body&gt;
+                                <img src="https://tinyurl.com/2bvknnow" />
+                            </p>
+                        </body>
                         ...
                       ```
                     - speichern und im Browser neu laden
+                    </script>
                 </section>
                 <section data-markdown>
+                    <script type="template/markdown">
                     - dann fügt in eine neue Zeile unter dem `img` ein und schreibt dort
                       ```html
-                        &lt;a href="http://schillerschule-offenbach.de/" &gt;
+                        <a href="http://schillerschule-offenbach.de/">
                             Schillerschule
-                        &lt;/a&gt;
+                        </a>
                       ```
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    ## Styling - es kommt das Aussehen dazu!
+                    <script type="template/markdown">
+                        ändert das H1 tag auf diese Art und Weise
+                        ```html
+                        <h1 style="color: rgb(200 60 60)">Überschrift</h1>
+                        ```
+                    </script>
                 </section>
             </div>
         </div>
