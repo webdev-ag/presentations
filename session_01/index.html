@@ -52,7 +52,7 @@
         </style>
 
         <!-- Theme used for syntax highlighted code -->
-        <link rel="stylesheet" href="../css/theme/black.css">
+        <link rel="stylesheet" href="../plugin/highlight/zenburn.css">
     </head>
     <body>
         <div class="reveal">
@@ -126,24 +126,33 @@
                     <section>
                         <h2>Installation VS Code</h2>
 
-                        <p>
+                        <p style="border: 2px solid blue">
                             Bitte sucht nach der Website<br/>
                             <code class="red">Download Visual Studio Code</code><br/>
                             <a href="https://code.visualstudio.com/download">code.visualstudio.com/download</a>
                         </p>
 
-                        <p>
+                        <p class="fragment" style="border: 2px solid green">
                             Verwendet dort den Download für<br/>
                             <code class="blue">Windows</code><br/>
                             <code class="green">User Installer</code><br/>
                             <code class="red">x64</code>
                         </p>
-
-                        <p>Dann führt die Installation durch!</p>
                     </section>
 
                     <section>
                         <img src="../images/vscode_download.jpg" alt="">
+                    </section>
+
+                    <section>
+                        <h2>Nach dem Download</h2>
+                        <p class="fragment" style="border: 2px solid yellow">
+                            Dann führt die Installation durch!
+                        </p>
+
+                        <p class="fragment" style="border: 2px solid blue">
+                            Stellt VS Code auf die Sprache deutsch
+                        </p>
                     </section>
 
                     <section>
@@ -154,11 +163,11 @@
                                 Erstellt einen Ordner <code class="green">ag_webdev</code> oder
                                 <code class="blue">ag-webdev</code>
                             </li>
-                            <li>
+                            <li class="fragment">
                                 das ist euer Hauptordner für alle Arbeiten und Projekte, die
                                 wir hier machen werden
                             </li>
-                            <li>
+                            <li class="fragment">
                                 Darin erstellt ihr für jedes Projekt oder manchmal auch pro
                                 Sitzung einen Unterordner
                             </li>
@@ -172,23 +181,106 @@
                             <li >Welches Thema interessiert Euch?</li>
                             <li class="fragment">Über welches Thema wisst ihr gut Bescheid?</li>
                             <li class="fragment">Über welches Thema würdet ihr gerne mehr wissen?</li>
-                            <li class="fragment"></li>
+                            <li class="fragment">Welches Thema könnte andere Menschen interessieren?</li>
                         </ul>
                     </section>
+
+
+                    <section>
+                        <h2>Startet Euer Projekt</h2>
+
+                        <ul>
+                            <li>
+                                Legt einen Ordner an, der wie Euer Projekt heißt
+                            </li>
+                            <li class="fragment">
+                                Öffnet <code class="green">VS Code</code>
+                            </li>
+                            <li class="fragment">
+                                drückt <code class="blue">[Strg] + [k]/[o]</code>
+                                und wählt Euren Projektordner aus
+                            </li>
+                            <li class="fragment">
+                                legt dort eine Datei an und nennt sie
+                                <code class="green">index.html</code>
+                            </li>
+                            <li class="fragment">
+                                erstellt ein HTML Grundgerüst<br/>
+                                Trick: schreibt <code class="blue">html:5</code> und
+                                drückt die Taste <code class="green">[Tab]</code>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section data-markdown>
+                    <script type="template/markdown">
+                        ## Grundgerüst einer HTML Seite
+
+                        ```html
+                        <!doctype html>
+                        <html lang="en">
+                        <head>
+                            <title>irgendwas</title>
+                        </head>
+                        <body>
+                            <h1>Überschrift</h1>
+                            <p>Text</p>
+                            <img src="http://..." />
+                            <a target="_blank" href="http://...">
+                                ein Link
+                            </a>
+                        </body>
+                        ```
+                    </script>
+                    </section>
+
                 </section>
 
                 <section>
-                    <section>
-                        <h2>HTML Basis</h2>
+
+                    <section data-markdown>
+                    <script type="template/markdown">
+                    ## HTML Basis
+
+                    - HTML besteht aus **TAGs**
+                    - z.B. so `<h1>` und endet mit `</h1>`
+                    - es gibt über 100 Tags
+                    - jedes Tag hat einen bestimmten Zweck
+                    </script>
                     </section>
 
                     <section>
-                        <h2>Tags</h2>
-                    </section>
-                </section>
+                        <h2>Zum selbst Nachlesen</h2>
+                        <h3>Englisch</h3>
+                        <ul>
+                            <li>
+                                Mozilla MDN Documentation:
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">
+                                    MDN HTML basics
+                                </a>
+                            </li>
+                            <li>Freecodecamp:
+                                <a href="https://www.freecodecamp.org/news/introduction-to-html-basics/">
+                                    HTML basics
+                                </a>
+                            </li>
+                        </ul>
 
-                <section>
-                    <h2>Installation Plugins</h2>
+                        <h3>Deutsch</h3>
+                        <ul>
+                            <li>
+                                <a href="https://wiki.selfhtml.org/wiki/HTML">SelfHTML Wiki:
+                                    wiki.selfhtml.org/wiki/HTML</a>
+                            </li>
+                            <li>
+                                <a href="https://www.html-seminar.de/befehlsuebersicht.htm">
+                                    www.html-seminar.de/befehlsuebersicht.htm
+                                </a>
+                            </li>
+                        </ul>
+
+                    </section>
+
                 </section>
             </div>
         </div>
