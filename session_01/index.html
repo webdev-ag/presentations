@@ -1,40 +1,213 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <base href="../">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+        <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/reveal.css">
+        <link rel="stylesheet" href="/css/theme/black.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+        <style>
+            .slides:after {
+                content: "AG Webentwicklung der Schillerschule / Jahrgang 2024-25";
+                font-size: 1.5rem;
+                color: #44D;
+                bottom: 1rem;
+                position: absolute;
+                width: max-content;
+                left: 25%;
+            }
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+            .reveal h2 {
+                font-size: 1.25em;
+                color: red;
+            }
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+            .reveal .slides .white {
+                color: rgb(250 250 250);
+            }
+
+            .reveal .slides .red {
+                color: rgb(250 32 32);
+            }
+
+            .reveal .slides .green {
+                color: rgb(64 242 64);
+            }
+
+            .reveal .slides .yellow {
+                color: rgb(242 242 64);
+            }
+
+            .reveal .slides .blue {
+                color: rgb(92 92 252);
+            }
+
+            .reveal .slides .bold {
+                font-weight: 700;
+            }
+        </style>
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../css/theme/black.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <section>
+                        <h2>Recap zur Schnupperstunde</h2>
+
+                        <ul>
+                            <li>
+                                <span class="red bold">HTML</span>
+                                <p class="fragment">
+                                    Das Grundgerüst, die Struktur einer Website
+                                    <span class="fragment">✅</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="green bold">CSS</span>
+                                <p class="fragment">
+                                    Farbe, Schriftart, Position, "Layout" einer Website
+                                    <span class="fragment">⏸️</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="blue bold">Javascript</span>
+                                <p class="fragment">
+                                    Die "Logik", das "Verhalten" einer Website.
+                                    <span class="fragment">⏸️</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Wer bin ich?</h2>
+                        <div style="float: left; width: 66%">
+                            <p style="text-align: left;"> Dominik Schopper</p>
+                            <p style="text-align: left;">seit 2001 Linux Administrator und Softwarentwickler</p>
+                            <p style="text-align: left;">seit 2019 IT Berater im Bereich Banken</p>
+                        </div>
+
+                        <img src="../images/dschopper.jpg" alt="" style="float: right; width: 25%;" class="fragment">
+                    </section>
+
+                    <section>
+                        <h2>Themen für heute</h2>
+
+                        <ol>
+                            <li class="fragment red">
+                                Arbeitsumgebung aufsetzen
+                                <ul class="white">
+                                    <li>Visual Studio Code installieren</li>
+                                    <li>Arbeitsverzeichnis anlegen</li>
+                                </ul>
+                            </li>
+                            <li class="fragment green">
+                                Projektideen sammeln
+                                <ul class="white">
+                                    <li>Zu welchem Thema habe ich Lust eine Website zu machen?</li>
+                                    <li>Was/Welche Dinge will ich dazu schreiben? Erzählen?</li>
+                                </ul>
+                            </li>
+                            <li class="fragment blue">
+                                HTML Seite anlegen
+                            </li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Installation VS Code</h2>
+
+                        <p>
+                            Bitte sucht nach der Website<br/>
+                            <code class="red">Download Visual Studio Code</code><br/>
+                            <a href="https://code.visualstudio.com/download">code.visualstudio.com/download</a>
+                        </p>
+
+                        <p>
+                            Verwendet dort den Download für<br/>
+                            <code class="blue">Windows</code><br/>
+                            <code class="green">User Installer</code><br/>
+                            <code class="red">x64</code>
+                        </p>
+
+                        <p>Dann führt die Installation durch!</p>
+                    </section>
+
+                    <section>
+                        <img src="../images/vscode_download.jpg" alt="">
+                    </section>
+
+                    <section>
+                        <h2>Erstellen eines Arbeitsverzeichnisses</h2>
+
+                        <ul>
+                            <li>
+                                Erstellt einen Ordner <code class="green">ag_webdev</code> oder
+                                <code class="blue">ag-webdev</code>
+                            </li>
+                            <li>
+                                das ist euer Hauptordner für alle Arbeiten und Projekte, die
+                                wir hier machen werden
+                            </li>
+                            <li>
+                                Darin erstellt ihr für jedes Projekt oder manchmal auch pro
+                                Sitzung einen Unterordner
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Projektideen</h2>
+
+                        <ul>
+                            <li >Welches Thema interessiert Euch?</li>
+                            <li class="fragment">Über welches Thema wisst ihr gut Bescheid?</li>
+                            <li class="fragment">Über welches Thema würdet ihr gerne mehr wissen?</li>
+                            <li class="fragment"></li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>HTML Basis</h2>
+                    </section>
+
+                    <section>
+                        <h2>Tags</h2>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Installation Plugins</h2>
+                </section>
+            </div>
+        </div>
+
+        <script src="../reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
+        </script>
+    </body>
 </html>
