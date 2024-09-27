@@ -28,7 +28,7 @@
             }
 
             .reveal .slides .green {
-                color: rgb(64 242 64);
+               color: rgb(64 242 64);
             }
 
             .reveal .slides .yellow {
@@ -38,21 +38,285 @@
             .reveal .slides .blue {
                 color: rgb(92 92 252);
             }
+            .reveal .slides .red {
+               color: red;
+            }
         </style>
 
         <!-- Theme used for syntax highlighted code -->
-        <link rel="stylesheet" href="../css/theme/black.css">
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
     </head>
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>Slide 1</section>
-                <section>Slide 2</section>
+                <section>
+                    <section>
+                        <h2>Recap</h2>
+                        <ul>
+                            <li class="fragment green">VS Code installieren</li>
+                            <li class="fragment blue">Projektidee ausdenken</li>
+                            <li class="fragment"><code class="red">index.html</code> anlegen</li>
+                            <li class="fragment yellow">
+                                Was noch übrig ist: <span>VS Code auf deutsch stellen</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>VS Code auf Deutsch</h2>
+                        <div class="fragment">Wie geht das?<br />
+                            <div class="fragment yellow">VS Code öffnen</div>
+                            <code class="fragment green">[Strg]+[Shift]+[p]</code><br />
+                            <code class="fragment blue">Configure Display Language</code>
+                            <div class="fragment red">Deutsch aussuchen</div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                    <script type="template/markdown">
+                        ## Tags und noch mehr Tags 1
+                        ### Überschriften
+                        - `h1` wichtigste Überschrift der ganzen Seite (nur einmal auf jeder Seite)
+                        - `h2` die nächst-wichtigste Überschrift
+                        - `h3`, `h4`, `h5`, `h6` mehr Überschriften
 
-                <section data-markdown>
-                <script type="template/markdown">
-                    ## Tags und Attribute
-                </script>
+                        probiert es einfach mal aus
+                        ```html
+                        <h2>Überschrift Typ h2</h2>
+                        <h3>Überschrift Typ h3</h3>
+                        <h4>Überschrift Typ h4</h4>
+                        ```
+                    </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="template/markdown">
+                            ## Tags und noch mehr Tags 2
+                            ### Listen
+                            `ul` (unordered list) ungeordnete Listen
+
+                            ```html
+                            <h2>Einkaufsliste</h2>
+                            <ul>
+                                <li>Brot</li>
+                                <li>Eier</li>
+                                <li>Milch</li>
+                            </ul>
+                            ```
+                            - Brot
+                            - Eier
+                            - Milch
+
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="template/markdown">
+                            ## Tags und noch mehr Tags 3
+                            ### Listen
+                            `ol` (ordered list) nummerierte Listen
+                            ```html
+                            <h2>Einkaufsliste</h2>
+                            <ol>
+                                <li>Brot</li>
+                                <li>Eier</li>
+                                <li>Milch</li>
+                            </ol>
+                            ```
+                            1. Brot
+                            1. Eier
+                            1. Milch
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="template/markdown">
+                            ## Tags und noch mehr Tags 4
+                            ### Bilder
+
+                            `img` (image = Bild) `src` (source = Quelle)
+
+                            ```html
+                            <img src="./bild.jpeg" alt="kurze Beschreibung"/>
+                            ```
+
+                            - ladet bitte ein Bild herunter, indem ihr mit der **rechten Maustaste** auf ein Bild klickt und auf "...speichern unter" klickt.
+                            - speichert es in eurem Projektordner, direkt neben Eurer index.html Datei.
+                            - fügt ein das tag in die index.html ein
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="template/markdown">
+                            ## Ein wichtiges Wort zu Bildern
+
+                            - wenn ihr eine Webseite _echt ins Internet_ stellt!
+                            - dürft ihr nur Bilder verwenden, wenn der Fotograf/Besitzer das erlaubt
+                            - im schlimmsten Fall müsst ihr eine (hohe!) Geldstrafe bezahlen
+                        </script>
+                    </section>
+
+                    <style>
+                        .with-table-border table {
+                            border: 1px solid white;
+                        }
+                        .with-table-border table th,
+                        .with-table-border table td {
+                            border: 1px solid white;
+                        }
+                    </style>
+
+                    <section data-markdown class="with-table-border">
+                        <script type="template/markdown">
+                            ## Tags und noch mehr Tags 5
+                            ### Tabellen
+                            ```html
+                            <table>
+                                <tr>
+                                    <th>Spalte 1 Überschrift</th>
+                                    <th>Spalte 2 Überschrift</th>
+                                </tr>
+                                <tr>
+                                    <td>Zeile 1, Spalte 1</td>
+                                    <td>Zeile 1, Spalte 2</td>
+                                </tr>
+                            </table>
+                            ```
+
+                            |Spalte 1 Überschrift|Spalte 2 Überschrift|
+                            | ------------------ | ------------------ |
+                            | Zeile 1 Spalte 1   | Zeile 1 Spalte 2   |
+                        </script>
+                    </section>
+
+                    <section>
+                        <h2>Aufgabe</h2>
+
+                        <p>Versucht euren Stundenplan als HTML Tabelle zu schreiben</p>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="template/markdown">
+                            ## HTML Basis
+
+                            - HTML besteht aus **TAGs**
+                            - z.B. so `<h1>` und endet mit `</h1>`
+                            - es gibt über 100 Tags
+                            - jedes Tag hat einen bestimmten Zweck
+                        </script>
+                    </section>
+
+                    <section>
+                        <h2>Zum selbst Nachlesen</h2>
+                        <h3>Englisch</h3>
+                        <ul>
+                            <li>
+                                Mozilla MDN Documentation:
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">
+                                    MDN HTML basics
+                                </a>
+                            </li>
+                            <li>Freecodecamp:
+                                <a href="https://www.freecodecamp.org/news/introduction-to-html-basics/">
+                                    HTML basics
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h3>Deutsch</h3>
+                        <ul>
+                            <li>
+                                <a href="https://wiki.selfhtml.org/wiki/HTML">SelfHTML Wiki:
+                                    wiki.selfhtml.org/wiki/HTML</a>
+                            </li>
+                            <li>
+                                <a href="https://www.html-seminar.de/befehlsuebersicht.htm">
+                                    www.html-seminar.de/befehlsuebersicht.htm
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                    <script type="template/markdown">
+                        ## CSS
+
+                        jetzt kommte Farbe dazu
+
+                        alle `h1` Überschriften werden rot, alle `p` Absätze werden blau?
+                        ```html
+                        <style>
+                        h1 {
+                            color: red;
+                        }
+
+                        p {
+                            color: rgb(200 220 10);
+                        }
+
+                        li {
+                            color: #66C0A3;
+                        }
+                        </style>
+                        ```
+                    </script>
+                    </section>
+
+                    <section id="css-xmp">
+                    <style>
+                    .reveal #css-xmp h2 { color : fuchsia; text-transform: none; }
+                    .reveal #css-xmp p  { color : rgb( 200 220 10 ); }
+                    .reveal #css-xmp li { color: #66C0A3; }
+                    </style>
+
+                    <h2>Eine Überschrift</h2>
+
+                    <p>Ein Absatz</p>
+
+                    <ul>
+                        <li>Eine kurze Liste</li>
+                    </ul>
+
+                    </section>
+
+                    <section data-markdown>
+                    <script type="template/markdown">
+                        ## Was kann man noch mit CSS anstellen?
+
+                        - Schriftarten: z.B
+                        ```css
+                        p { font-family: Arial; }
+                        ```
+                        - Schriftgrößen: z.B
+                        ```css
+                        p { font-size: 20px; }
+                        ```
+                        - Hintergrundfarben: z.B
+                        ```css
+                        p { background-color: darkgreen; }
+                        ```
+                    </script>
+                    </section>
+
+                    <section data-markdown>
+                    <script type="template/markdown">
+                        ## Was kann man noch mit CSS anstellen? (Teil 2 von X)
+
+                        - Breiten/Höhen von "Block-Elementen": z.B
+                        ```css
+                        h1 {
+                            height 50px;
+                            width: 200px;
+                            background-color: limegreen;
+                        }
+                        ```
+                    </script>
+                    </section>
                 </section>
             </div>
         </div>
