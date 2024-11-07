@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Sitzung 4 / Restart</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/reveal.css">
+    <link rel="stylesheet" href="../css/theme/black.css">
+
+    <style>
+        .slides:after {
+            content: "AG Webentwicklung der Schillerschule / Jahrgang 2024-25";
+            font-size: 1.5rem;
+            color: #44D;
+            bottom: 1rem;
+            position: absolute;
+            width: max-content;
+            left: 25%;
+        }
+
+        .reveal h2 {
+            font-size: 1.25em;
+            color: red;
+        }
+
+        .reveal .slides .green {
+            color: rgb(64 242 64);
+        }
+
+        .reveal .slides .yellow {
+            color: rgb(242 242 64);
+        }
+
+        .reveal .slides .blue {
+            color: rgb(92 92 252);
+        }
+
+        .reveal .slides .red {
+            color: red;
+        }
+    </style>
+    <style>
+        .with-table-border table {
+            border: 1px solid white;
+        }
+
+        .with-table-border table th,
+        .with-table-border table td {
+            border: 1px solid white;
+            font-size: 0.5em;
+        }
+    </style>
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section> <!-- recap section -->
+                <section data-markdown="./01_recap.md"></section>
+                <section data-markdown="./02_css_erweiterung_sizes_01.md"></section>
+
+            </section> <!-- /recap section -->
+
+            <section><!-- new stuff -->
+
+                <section data-markdown="./07_tag-unterschiede.md"></section>
+                <section data-markdown="./07b_tag-unterschiede.md"></section>
+                <section data-markdown="./07c_tag-unterschiede.md"></section>
+                <section data-markdown="./08_css_dimensions_spacing.md"></section>
+                <section data-markdown="./08b_css_dimensions_spacing.md"></section>
+                <section class="meh">
+                    <style>
+                        .eins {
+                            background-color: #FA0000;
+                            width: 40%;
+                            margin-left: 20% !important;
+                        }
+
+                        .zwei {
+                            background-color: #00FA77;
+                            width: 40%;
+                            margin-right: 10% !important;
+                        }
+
+                        .drei {
+                            background-color: #7700FA;
+                            width: 20%;
+                            margin-top: 200px !important;
+                        }
+
+                        .eins,
+                        .zwei,
+                        .drei {
+                            font-size: 0.5em;
+                        }
+                    </style>
+                    <div style="height: 100%; width: 100%; outline: 3px solid red">
+                        <p class="eins">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, perspiciatis.
+                            Beatae quas reprehenderit sapiente dolorem. Nisi, quae. Quia, ex accusantium.</p>
+                        <p class="zwei">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas alias saepe
+                            eveniet?</p>
+                        <p class="drei">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates ducimus
+                            doloribus deserunt laboriosam magnam voluptatum maiores.</p>
+                    </div>
+                </section>
+
+                <section id="css-xmp">
+                    <style>
+                        .reveal #css-xmp h2 {
+                            color: fuchsia;
+                            text-transform: none;
+                        }
+
+                        .reveal #css-xmp p {
+                            color: rgb(200 220 10);
+                        }
+
+                        .reveal #css-xmp li {
+                            color: #66C0A3;
+                        }
+                    </style>
+
+                    <h2>Eine Überschrift</h2>
+
+                    <p>Ein Absatz</p>
+
+                    <ul>
+                        <li>Eine kurze Liste</li>
+                    </ul>
+
+                </section>
+
+                <section data-markdown>
+                    <script type="template/markdown">
+                        ## Was kann man noch mit CSS anstellen?
+
+                        - Schriftarten: z.B
+                        ```css
+                        p { font-family: Arial; }
+                        ```
+                        - Schriftgrößen: z.B
+                        ```css
+                        p { font-size: 20px; }
+                        ```
+                        - Hintergrundfarben: z.B
+                        ```css
+                        p { background-color: darkgreen; }
+                        ```
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="template/markdown">
+                        ## Was kann man noch mit CSS anstellen? (Teil 2 von X)
+
+                        - Breiten/Höhen von "Block-Elementen": z.B
+                        ```css
+                        h1 {
+                            height 50px;
+                            width: 200px;
+                            background-color: limegreen;
+                        }
+                        ```
+                    </script>
+                </section>
+            </section> <!-- /new stuff -->
+
+            <section> <!-- additional -->
+                <section>
+                    <h2>Zum selbst Nachlesen</h2>
+                    <h3>Englisch</h3>
+                    <ul>
+                        <li>
+                            Mozilla MDN Documentation:
+                            <a
+                                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">
+                                MDN HTML basics
+                            </a>
+                        </li>
+                        <li>Freecodecamp:
+                            <a href="https://www.freecodecamp.org/news/introduction-to-html-basics/">
+                                HTML basics
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h3>Deutsch</h3>
+                    <ul>
+                        <li>
+                            <a href="https://wiki.selfhtml.org/wiki/HTML">SelfHTML Wiki:
+                                wiki.selfhtml.org/wiki/HTML</a>
+                        </li>
+                        <li>
+                            <a href="https://www.html-seminar.de/befehlsuebersicht.htm">
+                                www.html-seminar.de/befehlsuebersicht.htm
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>VS Code auf Deutsch</h2>
+                    <p class="fragment">Wie geht das?</p>
+                    <ul>
+                        <li class="fragment yellow">VS Code öffnen</li>
+                        <li class="fragment green"><code>[Strg]+[Shift]+[p]</code></li>
+                        <li class="fragment blue"><code>Display</code> eingeben</li>
+                        <li class="fragment green"><code>Configure Display Language</code> auswählen</li>
+                        <li class="fragment red"><code>Deutsch (de)</code> auswählen</li>
+                        <li class="fragment yellow"><code>[Enter]</code></li>
+                    </ul>
+                </section>
+
+            </section> <!-- /additional -->
+        </div>
+    </div>
+
+    <script src="../reveal.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>

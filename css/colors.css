@@ -1,0 +1,98 @@
+:root {
+    --c-red: rgb(221 51 51);
+    --c-green: rgb(34 187 34);
+    --c-blue: rgb(51 51 238);
+    --c-yellow: rgb(255 255 34);
+    --c-violet: rgb(238 17 255);
+    --c-blue2: rgb(102  153  238);
+    --c-black: rgb(52  52  52);
+
+    --c-red-50: rgb(221 51 51 / .5);
+    --c-green-50: rgb(34 187 34 / .5);
+    --c-blue-50: rgb(51 51 238 / .5);
+    --c-yellow-50: rgb(255 255 34 / .5);
+    --c-violet-50: rgb(238 17 255 / .5);
+    --c-blue2: rgb(102 153 238 / .5);
+    --c-black: rgb(52 52 52 / .5);
+}
+
+.red {
+    color: var(--c-red);
+}
+
+.green {
+    color: var(--c-green);
+}
+
+.blue {
+    color: var(--c-blue);
+}
+
+.yellow {
+    color: var(--c-yellow);
+}
+
+.violet {
+    color: var(--c-violet);
+}
+
+.red-50 {
+    color: var(--c-red-50);
+}
+
+.green-50 {
+    color: var(--c-green-50);
+}
+
+.blue-50 {
+    color: var(--c-blue-50);
+}
+
+.yellow-50 {
+    color: var(--c-yellow-50);
+}
+
+.violet-50 {
+    color: var(--c-violet-50);
+}
+
+
+.bg-red {
+    background-color: var(--c-red);
+}
+
+.bg-green {
+    background-color: var(--c-green);
+}
+
+.bg-blue {
+    background-color: var(--c-blue);
+}
+
+.bg-yellow {
+    background-color: var(--c-yellow);
+}
+
+.bg-violet {
+    background-color: var(--c-violet);
+}
+
+.bg-red-50 {
+    background-color: var(--c-red-50);
+}
+
+.bg-green-50 {
+    background-color: var(--c-green-50);
+}
+
+.bg-blue-50 {
+    background-color: var(--c-blue-50);
+}
+
+.bg-yellow-50 {
+    background-color: var(--c-yellow-50);
+}
+
+.bg-violet-50 {
+    background-color: var(--c-violet-50);
+}

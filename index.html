@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AG Webentwicklung / Sitzungen</title>
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/colors.css">
     <style>
         /* variables */
         :root {
             --header-size: 120px;
             --footer-size: 80px;
-            --c-alert: #FF9999;
-            --c-alert-dark: #FF3333;
-            --c-light: #BBCCFF;
-            --c-dark: #343434;
+            --c-alert: var(--c-red);
+            --c-alert-dark: var(--c-red);
+            --c-light: var(--c-blue2);
+            --c-dark: var(--c-black);
         }
 
         /* reset */
@@ -33,10 +34,14 @@
             text-decoration: none;
         }
 
-        a:hover {
+        a:hover, a:focus-visible {
             text-decoration: underline;
-            background-color: var(--c-alert);
-            color: var(--c-dark);
+            background-color: var(--c-red-50);
+            color: var(--c-blue);
+        }
+
+        a:focus-visible {
+            box-shadow: .5rem .5rem var(--c-yellow);
         }
 
         /* layout */
@@ -46,7 +51,7 @@
             font-size: 18px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             background-color: var(--c-dark);
-            color: var(--c-light);
+            color: var(--c-dark);
         }
 
         body {
@@ -95,14 +100,14 @@
             gap: 2rem;
         }
 
-        .session-list>a {
+        .session-list>a, .session-list>.blocker {
             display: block;
             margin:  .25rem;
             padding: .5rem;
             text-align: center;
             border-radius: .5rem;
-            box-shadow: .25rem .25rem 1rem var(--c-light);
-            outline: 1px inset var(--c-light);
+            box-shadow: .25rem .25rem 1rem var(--c-blue-50);
+            outline: 1px inset var(--c-blue-50);
         }
         .session-list .subtext {
             font-size: .666rem;
@@ -128,6 +133,13 @@
                 </a>
                 <a href="./session_03/index.html">Sitzung 3
                     <p class="subtext">Tag-Arten &amp; CSS mit Klassen</p>
+                </a>
+                <div class="blocker bg-yellow-50 red">
+                    Herbstferien
+                    <p class="subtext">(sogar 4 Wochen Pause)</p>
+                </div>
+                <a href="./session_04/index.html">Sitzung 4
+                    <p class="subtext">Restart nach den Herbstferien</p>
                 </a>
         </nav>
     </main>
