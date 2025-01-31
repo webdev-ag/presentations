@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Sitzung Installing GIT</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/reveal.css">
+    <link rel="stylesheet" href="../css/theme/black.css">
+
+    <style>
+        .slides:after {
+            content: "AG Webentwicklung der Schillerschule / Jahrgang 2024-25";
+            font-size: 1.5rem;
+            color: #44D;
+            bottom: 1rem;
+            position: absolute;
+            width: max-content;
+            left: 25%;
+        }
+
+        .reveal h2 {
+            font-size: 1.25em;
+            color: red;
+        }
+
+        .reveal .slides .green {
+            color: rgb(64 242 64);
+        }
+
+        .reveal .slides .yellow {
+            color: rgb(242 242 64);
+        }
+
+        .reveal .slides .blue {
+            color: rgb(92 92 252);
+        }
+
+        .reveal .slides .red {
+            color: red;
+        }
+    </style>
+    <style>
+        .with-table-border table {
+            border: 1px solid white;
+        }
+
+        .with-table-border table th,
+        .with-table-border table td {
+            border: 1px solid white;
+            font-size: 0.5em;
+        }
+    </style>
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section> <!-- motivation section -->
+                <section data-markdown="./01_motivation.md"></section>
+                <section data-markdown="./02_general_solution.md"></section>
+            </section> <!-- /motivation section -->
+
+            <section>
+                <section data-markdown="./03_wtf_git.md"></section>
+                <section data-markdown="./04_git_basics.md"></section>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="../reveal.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>

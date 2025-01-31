@@ -1,0 +1,20 @@
+@startuml
+
+title git basics
+!theme materia
+title GIT Basics
+
+#lightgreen[master repository] as master
+#lightblue[local repository] as local
+#orange[staging area] as stage
+
+[working directory] as wd
+
+master -down-> local : git clone or git pull
+local -down-> wd : git checkout
+
+wd -up-> stage : git add
+stage -up-> local : git commit
+local -up-> master : git push
+
+@enduml

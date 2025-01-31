@@ -5,7 +5,7 @@
 
 - Wir bauen eine Seite um HTML, CSS und JS Lerninhalte zu präsentieren
 - Wir üben dabei unsere Kenntnisse
-- Die Seite
+- Die Seite, soll unsere Übungen zu HTML und CSS anderen nahe bringen
 
 &nbsp;<br/>
 
