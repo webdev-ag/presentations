@@ -1,0 +1,40 @@
+@startuml name Git Basics Branches 01
+
+title git basic branching
+!theme materia
+title GIT Branching 01
+
+component "github.com" #green {
+    component "origin repository" #lightgreen {
+        [master\nbranch] as master
+        [feature\nbranch] as feature #Maroon
+
+        master <-right-> feature
+    }
+}
+
+component "your PC" #silver {
+    component "local repository" as local {
+        [master\nbranch] as master2
+        [feature\nbranch] as feature2 #Maroon
+
+        master2 <-right-> feature2
+    }
+
+
+    #orange[staging area] as stage
+
+    [working directory] as wd
+
+}
+
+
+
+wd -[#orange]left-> stage : git add
+stage -[#orange]up-> master2 : git commit
+master2 -[#orange]up-> master : git push
+
+master -[#green]down-> master2 : git pull
+master2 -[#green]down-> wd : git checkout
+
+@enduml

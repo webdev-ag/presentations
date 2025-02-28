@@ -1,0 +1,35 @@
+@startuml name GIT Branching 02
+
+!theme materia
+title GIT Branching 02
+
+component "github.com" #green {
+    component "origin repository" #lightgreen {
+        [master\nbranch] as master
+        [feature\nbranch] as feature #Maroon
+
+        master <-right-> feature
+    }
+}
+
+component "your PC" #silver {
+    component "local repository" as local {
+        [master\nbranch] as master2
+        [feature\nbranch] as feature2 #Maroon
+
+        master2 <-right-> feature2
+    }
+
+    #IndianRed[staging area] as stage
+    [working directory] as wd #Maroon
+
+}
+
+wd -[#orange]left-> stage : git add
+stage -[#orange]up-> feature2 : git commit
+feature2 -[#orange]up-> feature : git push
+
+feature -[#green]down-> feature2 : git pull
+feature2 -[#green]down-> wd : git checkout
+
+@enduml
