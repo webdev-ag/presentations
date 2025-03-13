@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>HTML + CSS Quiz: Wie sieht das aus!</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/reveal.css">
+    <link rel="stylesheet" href="../css/theme/black.css">
+
+    <style>
+        .slides:after {
+            content: "AG Webentwicklung der Schillerschule / Jahrgang 2024-25";
+            font-size: 1.5rem;
+            color: #44D;
+            bottom: 1rem;
+            position: absolute;
+            width: max-content;
+            left: 25%;
+        }
+
+        .reveal h2 {
+            font-size: 1.25em;
+            color: red;
+        }
+
+        .reveal .slides .green {
+            color: rgb(64 242 64);
+        }
+
+        .reveal .slides .yellow {
+            color: rgb(242 242 64);
+        }
+
+        .reveal .slides .blue {
+            color: rgb(92 92 252);
+        }
+
+        .reveal .slides .red {
+            color: red;
+        }
+    </style>
+    <style>
+        .with-table-border table {
+            border: 1px solid white;
+        }
+
+        .with-table-border table th,
+        .with-table-border table td {
+            border: 1px solid white;
+            font-size: 0.5em;
+        }
+    </style>
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section> <!-- recap section -->
+                <section>
+                    <h1>Wie sieht das aus?</h1>
+                    <p>Der HTML + CSS Quiz</p>
+                </section>
+            </section> <!-- /recap section -->
+
+            <section>
+                <section>
+                    <h3>Quiz 1</h3>
+                </section>
+                <section data-markdown>
+                <div style="display:flex;width: 100%;gap:.5em">
+                <pre style="width:45%"><code class="language-css" data-trim data-noescape>
+
+                    .one {
+                        width: 350px;
+                        margin-top: 20px;
+                        margin-left: 300px;
+                        border: 3px solid darkblue;
+                        border-radius: 12px;
+                    }
+
+                    .title {
+                        padding: 0 12px;
+                        background-color: lightgray;
+                        font-size: 24px;
+                    }
+                </code></pre>
+
+    <pre style="width:45%"><code data-trim data-noescape class="language-css">
+    .text {
+        margin: 12px;
+        font-size: 12px;
+    }
+
+    .bild {
+        display: block;
+        width: 100%;
+    }</code></pre>
+                </div>
+                </section>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="../reveal.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>
