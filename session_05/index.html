@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Sitzung 4 / Restart</title>
+    <title>Sitzung 5 / JS Basics</title>
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/reveal.css">
@@ -53,6 +53,14 @@
             border: 1px solid white;
             font-size: 0.5em;
         }
+
+        .reveal .slides pre {
+            font-size: 0.4em;
+        }
+        .reveal .slides p {
+            font-size: 0.6em;
+            text-align: left;
+        }
     </style>
 
     <!-- Theme used for syntax highlighted code -->
@@ -67,10 +75,179 @@
             </section> <!-- /recap section -->
 
             <section>
-                <section data-background-image="../images/layout_overview.webp"></section>
-                <section
-                    data-background-image="../images/layout_mobile.webp"
-                    data-background-size="contain"></section>
+                <section>
+                    <h2>Javascript Basics</h2>
+                    <p style="text-align: center;">the absolute basics!</p>
+                </section>
+
+                <section data-markdown>
+                <script language="template/markdown">
+                    ### JS variables
+
+                    ```javascript
+                    // variable the old way
+                    var someName = "Max";
+                    var otherThing = 42;
+                    var someFlag = true;
+
+                    // variables with let/const
+                    let someName = "Max";
+                    const otherThing = 42;
+                    ```
+                    A `const` variable can not be reassigned!
+
+                    the `let` and `const` variables have different scoping, we will worry about that later
+
+                    always use `let` or `const` instead of `var`!
+
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script language="template/markdown">
+                    ### Branching If/Then/Else
+                    ```javascript
+                    var someNumber = 42;
+
+                    if (someNumber > 0) {
+                        console.log("positive");
+                    } else if (someNumber < 0) {
+                        console.log("negative");
+                    } else {
+                        console.log("must be zero");
+                    }
+
+                    // comparison operators
+                    // if (a === b), (c !== d), (num1 < num2), (num3 > num4),
+                    // (num5 <= num6), (num7 >= num8)
+
+                    // logical operators
+                    // && : if ('a' === 'a' && 1 === 1) => true
+                    // || : if ('a' === 'b' || 1 === 1) => true
+                    ```
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script language="template/markdown">
+                    ### Loops with for/while
+                    ```javascript
+                    const someNumber = 5;
+
+                    // for loop
+                    for (let i = 0; i < someNumber; i++) {
+                        console.log(i);
+                    }
+
+                    // while loop
+                    let i = 0;
+                    while (i < someNumber) {
+                        console.log(i);
+                        i++;
+                    }
+                    ```
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script language="template/markdown">
+                    #### JS data structures / Arrays (Listen)
+                    ```javascript
+                    var someArray = ['A', 2, 'Pfz krz', 4.23];
+
+                    // accessing Arrays
+                    someArray[0];           // A
+                    someArray[2];           // 'Pfz krz'
+                    someArray.length;       // 4
+
+                    // adding/removing at the end of an Array
+                    someArray.push('D');    // ['A', 2, 'C', 4.23, 'D']
+                    const lastEl = someArray.pop();        // lastEl = 'D', someArray = ['A', 2, 'C', 4.23]
+
+                    // adding/removing at the beginning of an Array
+                    someArray.shift();      // [2, 'C', 4.23, 'D']
+                    const firstEl = someArray.unshift('A'); // firstEl = 4, someArray = ['A', 2, 'C', 4.23]
+                    ```
+                </script>
+                </section>
+
+
+                <section data-markdown>
+                <script language="template/markdown">
+                    #### JS data structures / Objects
+                    ```javascript
+                    var someObject = {
+                        name: "Max",
+                        age: 42,
+                        isStudent: true
+                    };
+
+                    // accessing Objects
+                    someObject.name;        // Max
+                    someObject.age;         // 42
+                    someObject.age = 21;    // {name: 'Max', age: 21, isStudent: true}
+
+                    const someKey = "age";
+                    someObject[someKey];    // 42
+                    someObject["name"] = 'Tom'; // {name: 'Tom', age: 21, isStudent: true}
+                    ```
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script language="template/markdown">
+                    ### Arrays abarbeiten
+                    ```javascript
+                    var someArray = ['A', 2, 'Pfz krz', 4.23];
+                    // for loop
+                    for (var i = 0; i < someArray.length; i++) {
+                        console.log(someArray[i]);
+                    }
+                    // for of loop
+                    for (var element of someArray) {
+                        console.log(element);
+                    }
+                    // forEach loop
+                    someArray.forEach(function (element) {
+                        console.log(element);
+                    });
+                    ```
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script language="template/markdown">
+                    ### Objects abarbeiten
+                    ```javascript
+                    var someObject = {
+                        name: "Max",
+                        age: 42,
+                        isStudent: true
+                    };
+                    // for in loop
+                    for (var key in someObject) {
+                        console.log(key + ": " + someObject[key]);
+                    }
+                    // Object.keys
+                    Object.keys(someObject).forEach(function (key) {
+                        console.log(key + ": " + someObject[key]);
+                    });
+                    ```
+                </script>
+                </section>
+
+                <section data-markdown>
+                <script language="template/markdown">
+                    ### Functions
+                    ```javascript
+                    function glueTogether(param1, param2) {
+                        return param1 + ' ' + param2;
+                    }
+                    var result = glueTogether('Hello', 'World!'); // Hello World!
+                    console.log(result);
+                    ```
+                </script>
+                </section>
             </section>
 
         </div>
